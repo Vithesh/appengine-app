@@ -1,0 +1,39 @@
+{
+  "name": "appengine-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "engines": {
+    "node": ">=8.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts",
+    "start": "node lib/server.js"
+  },
+  "dependencies": {
+    "@google-cloud/logging": "^4.5.2",
+    "@google-cloud/logging-winston": "^0.11.1",
+    "bluebird": "^3.5.5",
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.1",
+    "express": "^4.14.1",
+    "express-http-context": "^1.2.3",
+    "path": "^0.12.7",
+    "redis": "^2.8.0",
+    "ts-node-dev": "^1.0.0-pre.42",
+    "winston": "3.1.0"
+  },
+  "devDependencies": {
+    "@types/cookie-parser": "^1.4.1",
+    "@types/cors": "^2.8.4",
+    "@types/express": "^4.17.1",
+    "@types/ioredis": "^4.0.17",
+    "@types/redis": "^2.8.13",
+    "ts-node": "^8.1.0",
+    "tslint": "^5.8.0",
+    "tslint-config-prettier": "^1.18.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^2.9.2"
+  }
+}

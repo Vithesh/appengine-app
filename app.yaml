@@ -1,0 +1,18 @@
+runtime: nodejs8
+instance_class: F4
+
+env_variables:
+  NODE_ENV: 'staging'
+
+inbound_services:
+  - warmup
+
+automatic_scaling:
+  min_instances: 1
+
+vpc_access_connector:
+  name: "projects/highlevel-staging/locations/us-central1/connectors/staging-vpc"
+
+handlers:
+  - url: /.*
+    script: auto

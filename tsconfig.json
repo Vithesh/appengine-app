@@ -1,0 +1,24 @@
+{
+    "compilerOptions": {
+        "plugins": [
+            {
+                "name": "typescript-tslint-plugin",
+                "alwaysShowRuleFailuresAsWarnings": false,
+                "ignoreDefinitionFiles": true,
+                "configFile": "../tslint.json",
+                "suppressWhileTypeErrorsPresent": false,
+                "mockTypeScriptVersion": false
+            }
+        ],
+        "lib": ["es2017"],
+        "module": "commonjs",
+        "noImplicitReturns": true,
+        "outDir": "lib",
+        "sourceMap": true,
+        "target": "es2017",
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true
+    },
+    "compileOnSave": true,
+    "include": ["src", "views"]
+}
